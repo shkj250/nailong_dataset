@@ -1,0 +1,9 @@
+# Ubuntu CPU 安装顺序：
+# 1. python -m pip install 'torch>=2.6' 'torchvision>=0.21' --index-url https://download.pytorch.org/whl/cpu
+# 2. python -m pip install -r requirements.txt
+# 先安装 CPU 版本，再安装此清单，避免从默认源首次安装不需要的 CUDA 组件。
+# torch 和 torchvision 必须使用相互兼容的配套版本。
+torch>=2.6
+torchvision>=0.21
+Pillow>=10.0
+streamlit>=1.40,<2

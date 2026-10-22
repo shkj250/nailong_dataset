@@ -1,0 +1,13 @@
+# 本地 Python 环境和缓存
+.venv/
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# 训练产物保留在本机，不自动提交大体积模型
+outputs/
+
+# 本地开发记录和敏感配置
+.learnings/
+.streamlit/secrets.toml
